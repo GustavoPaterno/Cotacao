@@ -4,13 +4,12 @@ Projeto desenvolvido para realizar a **conversão de moedas em tempo real**, per
 
 ## 🧠 Sobre o projeto
 
-Este conversor tem como objetivo facilitar o acesso rápido a cotações de diferentes moedas ao redor do mundo. É ideal para estudos, viagens, finanças pessoais ou até aplicações comerciais.
+Este conversor tem como objetivo facilitar o acesso rápido a cotações de diferentes moedas ao redor do mundo.
 
 ## ✨ Funcionalidades
 
 - Seleção de moeda de origem e destino
 - Conversão de valores em tempo real
-- Exibição das bandeiras dos países
 - Interface responsiva e moderna
 - Atualização automática das taxas de câmbio
 

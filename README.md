@@ -29,13 +29,14 @@ Este conversor tem como objetivo facilitar o acesso rápido a cotações de dife
 git clone https://github.com/GustavoPaterno/Cotacao.git
 ```
 
-2. Rode o backend
+2. Baixe express e rode o backend 
 ```cmd
 cd Cotacao/backend
+npm install express
 node server.js
 ```
 
-3. Rode o frontend
+3. Baixe Vite e rode o frontend
 ```cmd
 cd Cotacao/
 npm install

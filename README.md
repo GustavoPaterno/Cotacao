@@ -42,3 +42,6 @@ cd Cotacao/
 npm install
 npm run dev
 ```
+
+## Deploy
+https://cotacao-kappa.vercel.app/

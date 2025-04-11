@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+# 💱 Conversor de Moedas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido para realizar a **conversão de moedas em tempo real**, permitindo que o usuário selecione duas moedas e visualize a cotação atual entre elas.
 
-Currently, two official plugins are available:
+## 🧠 Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este conversor tem como objetivo facilitar o acesso rápido a cotações de diferentes moedas ao redor do mundo. É ideal para estudos, viagens, finanças pessoais ou até aplicações comerciais.
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Seleção de moeda de origem e destino
+- Conversão de valores em tempo real
+- Exibição das bandeiras dos países
+- Interface responsiva e moderna
+- Atualização automática das taxas de câmbio
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tecnologias utilizadas
+
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- API de câmbio (ExchangeRate-API(https://www.exchangerate-api.com/)
+
+## 🚀 Como executar o projeto
+
+1. Clone o repositório:
+
+```cmd
+git clone https://github.com/GustavoPaterno/Cotacao.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Rode o backend
+```cmd
+cd Cotacao/backend
+node server.js
+```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+3. Rode o frontend
+```cmd
+cd Cotacao/
+npm install
+npm run dev
 ```

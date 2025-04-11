@@ -41,7 +41,7 @@ export default function App() {
   useEffect(() => {
     if (moedaUmSelecionada && moedaDoisSelecionada) {
       axios
-        .get<ExchangeRateApiResponse>(`http://localhost:5000/api/cambio/${moedaUmSelecionada}/${moedaDoisSelecionada}`)
+        .get<ExchangeRateApiResponse>(`https://cotacaoapi.onrender.com/api/cambio/${moedaUmSelecionada}/${moedaDoisSelecionada}`)
         .then(response => {
           const valorConversao = response.data.conversion_rate;
           setCotacao(valorConversao);
